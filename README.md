@@ -1,4 +1,4 @@
-# 📬 Sistema de Gestión de Libros y Autores - Ekkos Solutions
+# 📬 Sistema de Gestión de Libros y Autores - Ekos Solutions
 
 - Autor: Erwin Soto
 - Versión: 1.0.0
