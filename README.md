@@ -144,7 +144,7 @@ Este ejemplo muestra cómo obtener la lista de todos los Libros registrados en b
 ### 📄 Obtener Libro por id
 Este ejemplo muestra cómo obtener un Libro por el id.
 
-![📥 Endpoint: Listar Usuarios](getBooksAutorId.png)
+![📥 Endpoint: Listar Usuarios](images/getBooksAutorId.png)
 
 
 
