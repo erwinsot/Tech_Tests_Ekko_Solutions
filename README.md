@@ -98,67 +98,77 @@ A continuación, se muestran ejemplos de uso de la API utilizando Postman o herr
 
 
 ### 📄 Listar Autores
+Este ejemplo muestra cómo obtener la lista de todos los Autores registrados en base de datos.
 
 ![📥 Endpoint: Listar Usuarios](images/GetAllAutor.png)
 
-Este ejemplo muestra cómo obtener la lista de todos los Autores registrados en base de datos.
+
 
 ### 📄 Obtener Autor por id
+Este ejemplo muestra cómo obtener un autor por el id.
 
 ![📥 Endpoint: Listar Usuarios](images/getUserById.png)
 
-Este ejemplo muestra cómo obtener un autor por el id.
+
 
 ### ✅ Crear un Autor
+Este ejemplo muestra cómo registrar un nuevo Autor.
 
 ![📤 Endpoint: Agregar Usuario](images/createAutor.png)
 
-Este ejemplo muestra cómo registrar un nuevo Autor.
+
 
 
 ### 📨 Modificar Autor
+Este ejemplo muestra cómo enviar modificar un autor.
 
 ![📬 Endpoint: Enviar Notificación](images/modifyAutor.png)
 
-Este ejemplo muestra cómo enviar modificar un autor.
+
 
 ### 📨 Borrar Autor
+Este ejemplo muestra cómo  borrar un autor.
 
 ![📬 Endpoint: Enviar Notificación](images/deleteAutor.png)
 
-Este ejemplo muestra cómo enviar borrar un autor.
+
 
 
 ### 📄 Listar Libros
+Este ejemplo muestra cómo obtener la lista de todos los Libros registrados en base de datos.
 
 ![📥 Endpoint: Listar Usuarios](images/GetAllBooks.png)
 
-Este ejemplo muestra cómo obtener la lista de todos los Libros registrados en base de datos.
+
 
 ### 📄 Obtener Libro por id
+Este ejemplo muestra cómo obtener un Libro por el id.
 
 ![📥 Endpoint: Listar Usuarios](getBooksAutorId)
 
-Este ejemplo muestra cómo obtener un Libro por el id.
+
 
 ### ✅ Crear un Libro
+Este ejemplo muestra cómo registrar un nuevo Libro.
 
 ![📤 Endpoint: Agregar Usuario](images/createbook.png)
 
-Este ejemplo muestra cómo registrar un nuevo Libro.
+
 
 
 ### 📨 Modificar Libro
+Este ejemplo muestra cómo enviar modificar un Libro.
 
 ![📬 Endpoint: Enviar Notificación](images/modifyBook.png)
 
-Este ejemplo muestra cómo enviar modificar un Libro.
+
 
 ### 📨 Borrar Libro
+Este ejemplo muestra cómo enviar borrar un Libro.
 
 ![📬 Endpoint: Enviar Notificación](images/deleteBook.png)
 
-Este ejemplo muestra cómo enviar borrar un Libro.  
+  
 
 
 
