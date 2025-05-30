@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "0ebc1e07-0269-4233-a7c5-efc76e4c76fb",
+		"name": "pruebatecnica-ekoos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28391108"
+	},
+	"item": [
+		{
+			"name": "listar autores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear autor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Carlos Fuentes\",\r\n  \"fechaNacimiento\": \"1928-11-11\",\r\n  \"nacionalidad\": \"Mexicano\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "autor por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Carlos Fuentes\",\r\n  \"fechaNacimiento\": \"1928-11-11\",\r\n  \"nacionalidad\": \"Mexicano\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/autores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"autores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar autor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Nuevo Nombre\",\r\n    \"nacionalidad\": \"Nueva Nacionalidad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/autores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"autores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borar por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Nuevo Nombre\",\r\n    \"nacionalidad\": \"Nueva Nacionalidad\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/autores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"autores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar libros",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Nuevo Nombre\",\r\n    \"nacionalidad\": \"Nueva Nacionalidad\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/libros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener libro por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Nuevo Nombre\",\r\n    \"nacionalidad\": \"Nueva Nacionalidad\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/libros/autor/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"libros",
+						"autor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertar libro por autor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/libros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar libro por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"libro_id\": 1,\r\n  \"titulo\": \"Nuevo título\",\r\n  \"isbn\": \"978-1234567890\",\r\n  \"fechaPublicacion\": \"1967-05-30\",\r\n  \"autor\": {\r\n    \"autor_id\": 2,\r\n    \"nombre\": \"Julio Cortázar\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/libros/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"libros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrar libro por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/libros/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"libros",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
