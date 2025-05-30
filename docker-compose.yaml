@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  oracle-db:
+    image: gvenzl/oracle-xe:21-slim
+    environment:
+      - ORACLE_PASSWORD=password
+      - APP_USER=libros_user1
+      - APP_USER_PASSWORD=Libros_2024$Secure
+    ports:
+      - "1521:1521"
+    volumes:
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "sqlplus", "-L", "system/password@//localhost:1521/XE", "<", "NULL"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
