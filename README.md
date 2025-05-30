@@ -35,7 +35,7 @@ Solución backend completa para la administración de un catálogo bibliográfic
    ```
 2. Iniciar la base de datos Oracle
    ```
-   docker-compose up -d oracledb o podman-compose up
+   docker-compose up  o podman-compose up
    ```
    Esto creara un contenedor en el cual correra la base de datos
 
