@@ -119,24 +119,33 @@ EXCEPTION
             RAISE_APPLICATION_ERROR(-20003, 'Error al actualizar autor: ' || SQLERRM);
 END actualizar_autor;
 
-    PROCEDURE eliminar_autor(
-        p_autor_id IN NUMBER,
-        p_resultado OUT NUMBER
-    ) IS
-        v_count NUMBER;
+PROCEDURE eliminar_autor(
+    p_autor_id IN NUMBER,
+    p_resultado OUT NUMBER
+) IS
+    v_count NUMBER;
 BEGIN
-SELECT COUNT(*) INTO v_count FROM libros WHERE autor_id = p_autor_id;
+    -- Verificar si el autor existe
+    SELECT COUNT(*) INTO v_count FROM autores WHERE autor_id = p_autor_id;
+    IF v_count = 0 THEN
+        p_resultado := -1; -- Autor no existe
+        RETURN;
+    END IF;
 
-IF v_count = 0 THEN
-DELETE FROM autores WHERE autor_id = p_autor_id;
-p_resultado := 1;
-ELSE
-            p_resultado := 0;
-END IF;
+    -- Verificar si tiene libros
+    SELECT COUNT(*) INTO v_count FROM libros WHERE autor_id = p_autor_id;
+    IF v_count = 0 THEN
+        DELETE FROM autores WHERE autor_id = p_autor_id;
+        p_resultado := 1; -- Eliminado exitosamente
+    ELSE
+        p_resultado := 0; -- No eliminado, tiene libros asociados
+    END IF;
+
 EXCEPTION
-        WHEN OTHERS THEN
-            RAISE_APPLICATION_ERROR(-20004, 'Error al eliminar autor: ' || SQLERRM);
+    WHEN OTHERS THEN
+        RAISE_APPLICATION_ERROR(-20004, 'Error al eliminar autor: ' || SQLERRM);
 END eliminar_autor;
+
 
     PROCEDURE insertar_libro(
         p_titulo IN VARCHAR2,

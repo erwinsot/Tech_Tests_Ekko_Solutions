@@ -70,6 +70,16 @@ Solución backend completa para la administración de un catálogo bibliográfic
    -e "SPRING_DATASOURCE_URL=jdbc:oracle:thin:@//host.docker.internal:1521/XEPDB1" `  
    <nombre_imagen>       
    ```
+   
+    ## 🌐 Demo de la Aplicación
+Aca podra encontrar una demostracion de la aplicacion en funcionamiento, donde se muestra el uso de los endpoints y la interaccion con la base de datos.
+ 
+    ## 📹 Video Demo
+    Si desea ver un video demostrativo de la aplicación, puede hacerlo en el siguiente enlace:
+[![Video demo](images/video_demo.png)](https://www.youtube.com/watch?v=s9ATOTei8Z8)
+
+
+
 
    # Testeo de la Aplicación
 - Puedes probar la API utilizando herramientas como:
