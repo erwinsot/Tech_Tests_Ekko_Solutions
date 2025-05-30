@@ -99,7 +99,7 @@ A continuación, se muestran ejemplos de uso de la API utilizando Postman o herr
 
 ### 📄 Listar Autores
 
-![📥 Endpoint: Listar Usuarios](notification_system/docs/getUser.png)
+![📥 Endpoint: Listar Usuarios](images/GetAllAutor.png)
 
 Este ejemplo muestra cómo obtener la lista de todos los Autores registrados en base de datos.
 
