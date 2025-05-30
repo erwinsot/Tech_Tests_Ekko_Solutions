@@ -30,8 +30,8 @@ Solución backend completa para la administración de un catálogo bibliográfic
 ## 🚀 Instalación y Ejecución
 1. Clonar el repositorio
    ```
-   https://github.com/erwinsot/prueba_tecnica_ekossolutions.git
-   cd prueba_tecnica_ekossolutions 
+   https://github.com/erwinsot/Tech_Tests_Ekko_Solutions.git
+   cd Tech_Tests_Ekko_Solutions 
    ```
 2. Iniciar la base de datos Oracle
    ```
