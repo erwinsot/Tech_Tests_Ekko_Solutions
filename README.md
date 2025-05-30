@@ -177,6 +177,15 @@ Este ejemplo muestra cómo enviar borrar un Libro.
 
   
 
+# 📌 Contacto
+Erwin Soto
+
+🔗 [LinkedIn](https://www.linkedin.com/in/dubhan-soto/)
+
+---
+*Este proyecto fue desarrollado como prueba técnica para Ekos Solutions - © 2025*
+
+
 
 
 
